@@ -59,7 +59,7 @@ function SocialIcon(props) {
     const className = `fa fa-${props.img} ` + props.className;
     return (
         <a href={props.url} target="_blank">
-            <i class={className}>
+            <i className={className}>
             </i>
         </a>
     );
