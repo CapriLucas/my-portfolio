@@ -37,6 +37,10 @@ export default {
             type: "url",
         },
         {
+            name: "repoLink",
+            type: "url"
+        },
+        {
             name: "tags",
             type: "array",
             of: [

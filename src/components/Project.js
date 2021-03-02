@@ -11,6 +11,7 @@ export default function Project() {
             description,
             projectType,
             link,
+            repoLink,
             tags
         }`).then((data) => setProjectData(data))
             .catch(console.error);
@@ -48,10 +49,16 @@ export default function Project() {
                                     <p className="my-6 text-lg text-gray-700 leading-relaxed">
                                         {project.description}
                                     </p>
-                                    <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-red-500 font-bold hover:underline hover text-xl text-red">
-                                        View The Project{" "}
-                                        <span role="img" aria-label="right-pointer">👉</span>
-                                    </a>
+                                    <div className="flex-col flex">
+                                        <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-red-500 font-bold hover:underline hover text-xl text-red">
+                                            View The Project{" "}
+                                            <span role="img" aria-label="right-pointer">👉</span>
+                                        </a>
+                                        <a href={project.repoLink} rel="noopener noreferrer" target="_blank" className="text-red-500 font-bold hover:underline hover text-xl text-red">
+                                            View The Repo{" "}
+                                            <span role="img" aria-label="right-pointer">👉</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </article>
                         ))}
