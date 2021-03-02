@@ -58,7 +58,7 @@ export default function NavBar() {
 function SocialIcon(props) {
     const className = `fa fa-${props.img} ` + props.className;
     return (
-        <a href={props.url} target="_blank">
+        <a href={props.url} target="_blank" rel="noreferrer">
             <i className={className}>
             </i>
         </a>
