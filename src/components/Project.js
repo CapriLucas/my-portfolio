@@ -17,7 +17,7 @@ export default function Project() {
             .catch(console.error);
     }, []);
     return (
-        <main className="bg-green-50 min-h-screen py-12 px-9">
+        <main className="bg-gray-50 min-h-screen py-12 px-9">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12"> Welcome to my projects page!</h2>

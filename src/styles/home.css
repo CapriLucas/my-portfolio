@@ -1,0 +1,14 @@
+/* w-full h-full */
+
+.fondo-imagen {
+  height: calc(100% - 122px);
+}
+
+.home-name {
+  font-size: 180px;
+}
+@media (max-width: 700px) {
+  .home-name {
+    font-size: 120px;
+  }
+}
