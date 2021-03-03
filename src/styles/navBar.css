@@ -13,8 +13,10 @@
 }
 /* BARRA*/
 .headerNav {
-  box-shadow: inset 2px -7px 8px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.57);
   background-color: #fffbfe;
+  position: relative;
+  z-index: 10;
 }
 
 /* MENU */
