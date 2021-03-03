@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import '../styles/navBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default function NavBar() {
     return (
         <header className="bg-red-600">
@@ -39,13 +41,13 @@ export default function NavBar() {
                 <div className="inline-flex px-3 py-3 my-6">
                     <SocialIcon
                         url="https://github.com/CapriLucas"
-                        img="github"
+                        img={faGithub}
                         className="mr-4"
                     />
                     <SocialIcon
                         url="https://www.linkedin.com/in/lucas-capriata-1639b4183/"
-                        img="linkedin"
-                        className="mr-4"
+                        img={faLinkedin}
+                        className="mr-4 "
 
                     />
 
@@ -54,13 +56,13 @@ export default function NavBar() {
         </header>
     );
 }
+
 // <SocialIcon url="">
 function SocialIcon(props) {
-    const className = `fa fa-${props.img} ` + props.className;
+    const className = `align-middle social ` + props.className;
     return (
         <a href={props.url} target="_blank" rel="noreferrer">
-            <i className={className}>
-            </i>
+            <FontAwesomeIcon className={className} icon={props.img} />
         </a>
     );
 }
