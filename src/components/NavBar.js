@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
-    const screenWidth = window.screen.width;
+    const screenWidth = window.innerWidth;
     if (screenWidth > 700) {
         return (
             <header className="bg-red-600">

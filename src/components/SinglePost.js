@@ -33,8 +33,8 @@ export default function SinglePost() {
     console.log(singlePost);
     if (!singlePost) return <div>Loading...</div>;
     return (
-        <main className="bg-gray-200 min-h-screen p-12">
-            <article className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+        <main className="bg-gray-200 min-h-screen py-12 px-5">
+            <article className="container shadow-lg mx-auto bg-green-50 rounded-lg">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
                         <div className="bg-white bg-opacity-75 rounded p-12">
@@ -54,7 +54,7 @@ export default function SinglePost() {
                         style={{ height: "400px" }}
                     />
                 </header>
-                <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+                <div className="px-2 lg:px-24 py-12 lg:py-20 prose lg:prose-xl max-w-full">
                     <BlockContent blocks={singlePost.body} projectId="0bnmee57" dataset="production" />
                 </div>
             </article>

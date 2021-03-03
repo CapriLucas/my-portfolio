@@ -6,7 +6,7 @@ export default function Home() {
             <img
                 src={image}
                 alt="Stars background"
-                className="absolute object-cove w-full h-full" />
+                className="absolute object-cover w-full h-full" />
             <section
                 className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8"
             >

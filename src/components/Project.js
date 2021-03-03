@@ -17,14 +17,14 @@ export default function Project() {
             .catch(console.error);
     }, []);
     return (
-        <main className="bg-green-50 min-h-screen p-12">
+        <main className="bg-green-50 min-h-screen py-12 px-9">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12"> Welcome to my projects page!</h2>
-                <section className="grid grid-cols-2 gap-8">
+                <section className={(window.innerWidth < 1200) ? "grid-cols-1 grid gap-8  " : "grid-cols-2 grid gap-8 "}>
                     {projectData &&
                         projectData.map((project, index) => (
-                            <article className="relative rounded-lg shadow-xl bg-white p-16">
+                            <article className="relative rounded-lg shadow-xl bg-white p-10">
                                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                                     <a
                                         href={project.link}
